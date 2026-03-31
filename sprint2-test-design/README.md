@@ -1,37 +1,35 @@
 # Sprint 2 — Test Design & Documentation
 **App:** Urban Routes — Driver's license form & trip time/cost calculator  
-**Tools:** Spreadsheet · Flow Diagrams · Mind Maps  
+**Tools:** Spreadsheet · Flow Diagram · Mind Map  
 
 ---
 
 ## About this project
 
-In this sprint the focus shifted from executing tests to **designing them**. I worked on two areas of Urban Routes: the driver's license registration form and the trip calculator engine, which determines travel time and cost based on distance and departure time.
+In this sprint the focus shifted from executing tests to **designing them**. I worked on two areas of Urban Routes: the driver's license registration form and the trip calculator, which determines travel time and cost based on departure time.
 
-The goal was to apply formal test design techniques — equivalence class partitioning and boundary value analysis — to build efficient, risk-focused test cases without testing every possible input.
-
----
-
-## What I tested
-
-**Driver's License Form**
-Analyzed the validation rules for each required field: first name, last name, date of birth, and license number. I identified valid and invalid equivalence classes and their boundary values to ensure the form correctly accepts and rejects input.
-
-**Trip Time & Cost Calculator**
-The calculator changes travel speed depending on the time of day, which directly affects the trip duration and price. I mapped out all 5 time windows and designed test cases covering both the typical values and the exact boundary points where speed changes occur.
+I applied equivalence class partitioning and boundary value analysis to build efficient, risk-focused test cases without needing to test every possible input.
 
 ---
 
-## Test Design: Equivalence Classes
+## Artifacts created
 
-### Driver's License — Name Field
-| Class | Range | Valid? |
-|---|---|---|
-| Valid length | 2–14 characters | ✅ |
-| Too short | Less than 2 characters | ❌ |
-| Too long | More than 14 characters | ❌ |
+**Mind Map — Driver's License Form**
+Mapped out all fields, validations, UI behavior, button logic, and edge cases of the "Add Driver's License" modal. This helped visualize the full scope of what needed to be tested before writing a single test case.
 
-### Trip Calculator — Speed by Time of Day
+**Equivalence Classes & Boundary Values**
+Identified valid and invalid input classes for the license form fields (name, last name, date of birth, license number) and for the trip calculator's time-based speed logic.
+
+**Flow Diagram — Speed Logic**
+Created a decision flow diagram showing how the app selects travel speed based on the user's departure time across 5 time windows.
+
+**Test Cases — Trip Calculator**
+Designed test cases validating that the app correctly calculates trip duration and price for each speed scenario.
+
+---
+
+## Equivalence Classes — Speed by Time of Day
+
 | Time Range | Speed | Boundary Values Tested |
 |---|---|---|
 | 00:01 – 08:00 | 45 km/h | 00:00, 00:01, 08:00, 08:01 |
@@ -42,18 +40,18 @@ The calculator changes travel speed depending on the time of day, which directly
 
 ---
 
-## Test Cases
+## Test Cases — Trip Calculator
 
-| ID | Scenario | Expected Result |
-|---|---|---|
-| p-1 | Trip at 19:00 (25 km/h), 1.4 km | Duration: 3.36 min · Price: $0.34 |
-| p-2 | Trip at 10:00 (30 km/h), 1.4 km | Duration: 2.8 min · Price: $0.28 |
+| ID | Departure Time | Speed | Distance | Expected Duration | Expected Price |
+|---|---|---|---|---|---|
+| p-1 | 19:00 | 25 km/h | 1.4 km | 3.36 min | $0.34 |
+| p-2 | 10:00 | 30 km/h | 1.4 km | 2.80 min | $0.28 |
 
 ---
 
 ## What I learned
 
-This sprint taught me that good testing is not about testing everything — it is about testing the right things. Equivalence class partitioning and boundary value analysis are powerful tools that help you maximize defect detection while keeping the test suite manageable. I also learned how to read business requirements and translate them into structured, traceable test scenarios.
+This sprint taught me that good testing is not about testing everything — it is about testing the right things. Equivalence class partitioning and boundary value analysis help maximize defect detection while keeping test suites manageable. I also learned how to translate business logic into visual artifacts like mind maps and flow diagrams that make testing more structured and easier to communicate to a team.
 
 ---
 
