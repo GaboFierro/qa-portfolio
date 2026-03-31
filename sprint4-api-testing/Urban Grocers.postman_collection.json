@@ -1,0 +1,2622 @@
+{
+  "info": {
+    "_postman_id": "23f369dc-e37e-4646-8b23-a6bd386ee567",
+    "name": "Urban Grocers",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "47549960"
+  },
+  "item": [
+    {
+      "name": "Req1 Kits",
+      "item": [
+        {
+          "name": "Agregar producto a un kit con ID de kit válido y existente",
+          "item": [
+            {
+              "name": "Agregar producto a un kit con ID de kit válido y existente",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"firstName\": \"Test\",\n    \"phone\": \"+10005550001\",\n    \"address\": \"123 Test Street\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/api/v1/users",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "users"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Agregar producto a un kit con ID de kit válido y existente",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer dddb0a6d-f613-4f03-ac35-456b4ea315f2",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"name\": \"Kit prueba\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/api/v1/kits",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "kits"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Agregar producto a un kit con ID de kit válido y existente",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer dddb0a6d-f613-4f03-ac35-456b4ea315f2",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"productsList\": [\n        {\n            \"id\": 1,\n            \"quantity\": 1\n        }\n    ]\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/api/v1/kits/7/products",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "kits",
+                    "7",
+                    "products"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Agregar producto a un kit con ID de kit válido y existente",
+          "item": [
+            {
+              "name": "Prueba",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer dddb0a6d-f613-4f03-ac35-456b4ea315f2",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"productsList\": [\n        {\n            \"id\": 1,\n            \"quantity\": 1\n        }\n    ]\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/api/v1/kits/999999/products",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "kits",
+                    "999999",
+                    "products"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Agregar producto con ID de kit no existente",
+          "item": [
+            {
+              "name": "Prueba",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer dddb0a6d-f613-4f03-ac35-456b4ea315f2",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"productsList\": [\n        {\n            \"id\": 1,\n            \"quantity\": 1\n        }\n    ]\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/api/v1/kits/999999/products",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "kits",
+                    "999999",
+                    "products"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Agregar producto con ID de kit = 0",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer dddb0a6d-f613-4f03-ac35-456b4ea315f2",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"productsList\": [\n        {\n            \"id\": 1,\n            \"quantity\": 1\n        }\n    ]\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/api/v1/kits/0/products",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "kits",
+                    "0",
+                    "products"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Agregar producto con ID de kit negativo",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer dddb0a6d-f613-4f03-ac35-456b4ea315f2",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"productsList\": [\n        {\n            \"id\": 1,\n            \"quantity\": 1\n        }\n    ]\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/api/v1/kits/-1/products",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "kits",
+                    "-1",
+                    "products"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Agregar producto con ID de producto existente y válido",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer dddb0a6d-f613-4f03-ac35-456b4ea315f2",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"productsList\": [\n        {\n            \"id\": 7,\n            \"quantity\": 2\n        }\n    ]\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/api/v1/kits/7/products",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "kits",
+                    "7",
+                    "products"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Agregar producto con ID de producto no existente",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer dddb0a6d-f613-4f03-ac35-456b4ea315f2",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"productsList\": [\n        {\n            \"id\": 999999,\n            \"quantity\": 1\n        }\n    ]\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/api/v1/kits/7/products",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "kits",
+                    "7",
+                    "products"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Agregar producto con ID de producto como string",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer dddb0a6d-f613-4f03-ac35-456b4ea315f2",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"productsList\": [\n        {\n            \"id\": \"leche\",\n            \"quantity\": 1\n        }\n    ]\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/api/v1/kits/7/products",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "kits",
+                    "7",
+                    "products"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Agregar producto con quantity = 1",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer 648a5c8c-3139-43e0-964e-64459782ac13",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"productsList\": [\n        {\n            \"id\": 2,\n            \"quantity\": 1\n        }\n    ]\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/api/v1/kits/7/products",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "kits",
+                    "7",
+                    "products"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Agregar producto con quantity = 100",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer 648a5c8c-3139-43e0-964e-64459782ac13",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"productsList\": [\n        {\n            \"id\": 3,\n            \"quantity\": 100\n        }\n    ]\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/api/v1/kits/7/products",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "kits",
+                    "7",
+                    "products"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Agregar producto con quantity = 0",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer 648a5c8c-3139-43e0-964e-64459782ac13",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"productsList\": [\n        {\n            \"id\": 4,\n            \"quantity\": 0\n        }\n    ]\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/api/v1/kits/7/products",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "kits",
+                    "7",
+                    "products"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Agregar producto con quantity negativa",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer 648a5c8c-3139-43e0-964e-64459782ac13",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"productsList\": [\n        {\n            \"id\": 4,\n            \"quantity\": -3\n        }\n    ]\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/api/v1/kits/7/products",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "kits",
+                    "7",
+                    "products"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Enviar productsList como array vacío",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer 648a5c8c-3139-43e0-964e-64459782ac13",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"productsList\": []\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/api/v1/kits/7/products",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "kits",
+                    "7",
+                    "products"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Enviar productsList como objeto en lugar de array",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer 648a5c8c-3139-43e0-964e-64459782ac13",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"productsList\": {\n        \"id\": 1,\n        \"quantity\": 1\n    }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/api/v1/kits/7/products",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "kits",
+                    "7",
+                    "products"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Enviar body sin el campo productsList",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer 648a5c8c-3139-43e0-964e-64459782ac13",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"items\": [\n        {\n            \"id\": 1,\n            \"quantity\": 1\n        }\n    ]\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/api/v1/kits/7/products",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "kits",
+                    "7",
+                    "products"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Agregar 1 producto único al kit",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer 648a5c8c-3139-43e0-964e-64459782ac13",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"productsList\": [\n        {\n            \"id\": 5,\n            \"quantity\": 1\n        }\n    ]\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/api/v1/kits/7/products",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "kits",
+                    "7",
+                    "products"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Nuevo kit",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer 648a5c8c-3139-43e0-964e-64459782ac13",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"name\": \"Kit limite prueba\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/api/v1/kits",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "kits"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Agregar 15 productos únicos al kit",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer 648a5c8c-3139-43e0-964e-64459782ac13",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"productsList\": [\n        {\"id\": 1, \"quantity\": 1},\n        {\"id\": 2, \"quantity\": 1},\n        {\"id\": 3, \"quantity\": 1},\n        {\"id\": 4, \"quantity\": 1},\n        {\"id\": 5, \"quantity\": 1},\n        {\"id\": 6, \"quantity\": 1},\n        {\"id\": 7, \"quantity\": 1},\n        {\"id\": 8, \"quantity\": 1},\n        {\"id\": 9, \"quantity\": 1},\n        {\"id\": 10, \"quantity\": 1},\n        {\"id\": 11, \"quantity\": 1},\n        {\"id\": 12, \"quantity\": 1},\n        {\"id\": 13, \"quantity\": 1},\n        {\"id\": 14, \"quantity\": 1},\n        {\"id\": 15, \"quantity\": 1}\n    ]\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/api/v1/kits/8/products",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "kits",
+                    "8",
+                    "products"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "IDs duplicados en productsList cuentan como 1",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer 648a5c8c-3139-43e0-964e-64459782ac13",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"productsList\": [\n        {\n            \"id\": 5,\n            \"quantity\": 2\n        },\n        {\n            \"id\": 5,\n            \"quantity\": 10\n        }\n    ]\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/api/v1/kits/8/products",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "kits",
+                    "8",
+                    "products"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Agregar 31 productos únicos al kit",
+          "item": [
+            {
+              "name": "Kit 31 productos",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer 648a5c8c-3139-43e0-964e-64459782ac13",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"name\": \"Kit 31 productos\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/api/v1/kits",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "kits"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer 648a5c8c-3139-43e0-964e-64459782ac13",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"productsList\": [\n        {\"id\": 1, \"quantity\": 1},\n        {\"id\": 2, \"quantity\": 1},\n        {\"id\": 3, \"quantity\": 1},\n        {\"id\": 4, \"quantity\": 1},\n        {\"id\": 5, \"quantity\": 1},\n        {\"id\": 6, \"quantity\": 1},\n        {\"id\": 7, \"quantity\": 1},\n        {\"id\": 8, \"quantity\": 1},\n        {\"id\": 9, \"quantity\": 1},\n        {\"id\": 10, \"quantity\": 1},\n        {\"id\": 11, \"quantity\": 1},\n        {\"id\": 12, \"quantity\": 1},\n        {\"id\": 13, \"quantity\": 1},\n        {\"id\": 14, \"quantity\": 1},\n        {\"id\": 15, \"quantity\": 1},\n        {\"id\": 16, \"quantity\": 1},\n        {\"id\": 17, \"quantity\": 1},\n        {\"id\": 18, \"quantity\": 1},\n        {\"id\": 19, \"quantity\": 1},\n        {\"id\": 20, \"quantity\": 1},\n        {\"id\": 21, \"quantity\": 1},\n        {\"id\": 22, \"quantity\": 1},\n        {\"id\": 23, \"quantity\": 1},\n        {\"id\": 24, \"quantity\": 1},\n        {\"id\": 25, \"quantity\": 1},\n        {\"id\": 26, \"quantity\": 1},\n        {\"id\": 27, \"quantity\": 1},\n        {\"id\": 28, \"quantity\": 1},\n        {\"id\": 29, \"quantity\": 1},\n        {\"id\": 30, \"quantity\": 1},\n        {\"id\": 31, \"quantity\": 1}\n    ]\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/api/v1/kits/9/products",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "kits",
+                    "9",
+                    "products"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Agregar producto con ID de producto = 0",
+          "item": [
+            {
+              "name": "Agregar producto con ID de producto = 0",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer dddb0a6d-f613-4f03-ac35-456b4ea315f2",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"productsList\": [\n        {\n            \"id\": 0,\n            \"quantity\": 1\n        }\n    ]\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/api/v1/kits/7/products",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "kits",
+                    "7",
+                    "products"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Agregar producto con campo id faltante en productsList",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer 5245aaef-5611-47cc-afd2-a76798ba0ffc",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"productsList\": [\n        {\n            \"quantity\": 1\n        }\n    ]\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/api/v1/kits/7/products",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "kits",
+                    "7",
+                    "products"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Agregar producto con campo quantity faltante",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer 5245aaef-5611-47cc-afd2-a76798ba0ffc",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"productsList\": [\n        {\n            \"id\": 1\n        }\n    ]\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/api/v1/kits/7/products",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "kits",
+                    "7",
+                    "products"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Agregar 29 productos únicos al kit",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer 5245aaef-5611-47cc-afd2-a76798ba0ffc",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"name\": \"Kit 29 productos\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/api/v1/kits",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "kits"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer 5245aaef-5611-47cc-afd2-a76798ba0ffc",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"productsList\": [\n        {\"id\": 1, \"quantity\": 1},\n        {\"id\": 2, \"quantity\": 1},\n        {\"id\": 3, \"quantity\": 1},\n        {\"id\": 4, \"quantity\": 1},\n        {\"id\": 5, \"quantity\": 1},\n        {\"id\": 6, \"quantity\": 1},\n        {\"id\": 7, \"quantity\": 1},\n        {\"id\": 8, \"quantity\": 1},\n        {\"id\": 9, \"quantity\": 1},\n        {\"id\": 10, \"quantity\": 1},\n        {\"id\": 11, \"quantity\": 1},\n        {\"id\": 12, \"quantity\": 1},\n        {\"id\": 13, \"quantity\": 1},\n        {\"id\": 14, \"quantity\": 1},\n        {\"id\": 15, \"quantity\": 1},\n        {\"id\": 16, \"quantity\": 1},\n        {\"id\": 17, \"quantity\": 1},\n        {\"id\": 18, \"quantity\": 1},\n        {\"id\": 19, \"quantity\": 1},\n        {\"id\": 20, \"quantity\": 1},\n        {\"id\": 21, \"quantity\": 1},\n        {\"id\": 22, \"quantity\": 1},\n        {\"id\": 23, \"quantity\": 1},\n        {\"id\": 24, \"quantity\": 1},\n        {\"id\": 25, \"quantity\": 1},\n        {\"id\": 26, \"quantity\": 1},\n        {\"id\": 27, \"quantity\": 1},\n        {\"id\": 28, \"quantity\": 1},\n        {\"id\": 29, \"quantity\": 1}\n    ]\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/api/v1/kits/8/products",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "kits",
+                    "8",
+                    "products"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Agregar exactamente 30 productos únicos al kit",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer 5245aaef-5611-47cc-afd2-a76798ba0ffc",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"name\": \"Kit 30 productos\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/api/v1/kits",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "kits"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer 5245aaef-5611-47cc-afd2-a76798ba0ffc",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"productsList\": [\n        {\"id\": 1, \"quantity\": 1},\n        {\"id\": 2, \"quantity\": 1},\n        {\"id\": 3, \"quantity\": 1},\n        {\"id\": 4, \"quantity\": 1},\n        {\"id\": 5, \"quantity\": 1},\n        {\"id\": 6, \"quantity\": 1},\n        {\"id\": 7, \"quantity\": 1},\n        {\"id\": 8, \"quantity\": 1},\n        {\"id\": 9, \"quantity\": 1},\n        {\"id\": 10, \"quantity\": 1},\n        {\"id\": 11, \"quantity\": 1},\n        {\"id\": 12, \"quantity\": 1},\n        {\"id\": 13, \"quantity\": 1},\n        {\"id\": 14, \"quantity\": 1},\n        {\"id\": 15, \"quantity\": 1},\n        {\"id\": 16, \"quantity\": 1},\n        {\"id\": 17, \"quantity\": 1},\n        {\"id\": 18, \"quantity\": 1},\n        {\"id\": 19, \"quantity\": 1},\n        {\"id\": 20, \"quantity\": 1},\n        {\"id\": 21, \"quantity\": 1},\n        {\"id\": 22, \"quantity\": 1},\n        {\"id\": 23, \"quantity\": 1},\n        {\"id\": 24, \"quantity\": 1},\n        {\"id\": 25, \"quantity\": 1},\n        {\"id\": 26, \"quantity\": 1},\n        {\"id\": 27, \"quantity\": 1},\n        {\"id\": 28, \"quantity\": 1},\n        {\"id\": 29, \"quantity\": 1},\n        {\"id\": 30, \"quantity\": 1}\n    ]\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/api/v1/kits/9/products",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "kits",
+                    "9",
+                    "products"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Req2 servicio de entrega",
+      "item": [
+        {
+          "name": "deliveryTime = 8",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"deliveryTime\": 8,\n    \"productsCount\": 5,\n    \"productsWeight\": 1\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/order-and-go/v1/delivery",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "order-and-go",
+                    "v1",
+                    "delivery"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "deliveryTime = 22",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"deliveryTime\": 22,\n    \"productsCount\": 5,\n    \"productsWeight\": 1\n}"
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/order-and-go/v1/delivery",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "order-and-go",
+                    "v1",
+                    "delivery"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "deliveryTime = 7",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"deliveryTime\": 7,\n    \"productsCount\": 5,\n    \"productsWeight\": 1\n}"
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/order-and-go/v1/delivery",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "order-and-go",
+                    "v1",
+                    "delivery"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "deliveryTime = 15",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"deliveryTime\": 15,\n    \"productsCount\": 5,\n    \"productsWeight\": 1\n}"
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/order-and-go/v1/delivery",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "order-and-go",
+                    "v1",
+                    "delivery"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "deliveryTime = 23",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"deliveryTime\": 23,\n    \"productsCount\": 5,\n    \"productsWeight\": 1\n}"
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/order-and-go/v1/delivery",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "order-and-go",
+                    "v1",
+                    "delivery"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "deliveryTime = -1",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"deliveryTime\": -1,\n    \"productsCount\": 5,\n    \"productsWeight\": 1\n}"
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/order-and-go/v1/delivery",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "order-and-go",
+                    "v1",
+                    "delivery"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "deliveryTime como string",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"deliveryTime\": \"diez\",\n    \"productsCount\": 5,\n    \"productsWeight\": 1\n}"
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/order-and-go/v1/delivery",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "order-and-go",
+                    "v1",
+                    "delivery"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "productsCount = 0",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"deliveryTime\": 12,\n    \"productsCount\": 0,\n    \"productsWeight\": 1\n}"
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/order-and-go/v1/delivery",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "order-and-go",
+                    "v1",
+                    "delivery"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "productsCount = 8",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"deliveryTime\": 12,\n    \"productsCount\": 8,\n    \"productsWeight\": 1\n}"
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/order-and-go/v1/delivery",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "order-and-go",
+                    "v1",
+                    "delivery"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "productsCount = 9",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"deliveryTime\": 12,\n    \"productsCount\": 9,\n    \"productsWeight\": 4\n}"
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/order-and-go/v1/delivery",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "order-and-go",
+                    "v1",
+                    "delivery"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "productsCount = 15",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"deliveryTime\": 12,\n    \"productsCount\": 15,\n    \"productsWeight\": 4\n}"
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/order-and-go/v1/delivery",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "order-and-go",
+                    "v1",
+                    "delivery"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "productsCount = 16",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"deliveryTime\": 12,\n    \"productsCount\": 16,\n    \"productsWeight\": 4\n}"
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/order-and-go/v1/delivery",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "order-and-go",
+                    "v1",
+                    "delivery"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "productsCount = 4",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"deliveryTime\": 12,\n    \"productsCount\": 4,\n    \"productsWeight\": 1\n}"
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/order-and-go/v1/delivery",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "order-and-go",
+                    "v1",
+                    "delivery"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "productsCount = -1",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"deliveryTime\": 12,\n    \"productsCount\": -1,\n    \"productsWeight\": 1\n}"
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/order-and-go/v1/delivery",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "order-and-go",
+                    "v1",
+                    "delivery"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "productsCount como string",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"deliveryTime\": 12,\n    \"productsCount\": \"cinco\",\n    \"productsWeight\": 1\n}"
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/order-and-go/v1/delivery",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "order-and-go",
+                    "v1",
+                    "delivery"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "productsWeight = 0",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"deliveryTime\": 12,\n    \"productsCount\": 5,\n    \"productsWeight\": 0\n}"
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/order-and-go/v1/delivery",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "order-and-go",
+                    "v1",
+                    "delivery"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "productsWeight = 3",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"deliveryTime\": 12,\n    \"productsCount\": 5,\n    \"productsWeight\": 3\n\n}"
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/order-and-go/v1/delivery",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "order-and-go",
+                    "v1",
+                    "delivery"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "productsWeight = 3.1",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"deliveryTime\": 12,\n    \"productsCount\": 9,\n    \"productsWeight\": 3.1\n}"
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/order-and-go/v1/delivery",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "order-and-go",
+                    "v1",
+                    "delivery"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "productsWeight = 6",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"deliveryTime\": 12,\n    \"productsCount\": 9,\n    \"productsWeight\": 6\n}"
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/order-and-go/v1/delivery",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "order-and-go",
+                    "v1",
+                    "delivery"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "productsWeight = 6.1",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"deliveryTime\": 12,\n    \"productsCount\": 9,\n    \"productsWeight\": 6.1\n}"
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/order-and-go/v1/delivery",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "order-and-go",
+                    "v1",
+                    "delivery"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "productsWeight = 1.5",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"deliveryTime\": 12,\n    \"productsCount\": 5,\n    \"productsWeight\": 1.5\n}"
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/order-and-go/v1/delivery",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "order-and-go",
+                    "v1",
+                    "delivery"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "productsWeight = -1",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"deliveryTime\": 12,\n    \"productsCount\": 5,\n    \"productsWeight\": -1\n}"
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/order-and-go/v1/delivery",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "order-and-go",
+                    "v1",
+                    "delivery"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "productsWeight como string",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"deliveryTime\": 12,\n    \"productsCount\": 5,\n    \"productsWeight\": \"dos\"\n}"
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/order-and-go/v1/delivery",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "order-and-go",
+                    "v1",
+                    "delivery"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Enviar body sin el campo productsCount",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"deliveryTime\": 12,\n    \"productsWeight\": 1\n}"
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/order-and-go/v1/delivery",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "order-and-go",
+                    "v1",
+                    "delivery"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Enviar body completamente vacío",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{}"
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/order-and-go/v1/delivery",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "order-and-go",
+                    "v1",
+                    "delivery"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "deliveryTime = 9",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"deliveryTime\": 9,\n    \"productsCount\": 5,\n    \"productsWeight\": 1\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/order-and-go/v1/delivery",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "order-and-go",
+                    "v1",
+                    "delivery"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "deliveryTime = 21",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"deliveryTime\": 21,\n    \"productsCount\": 5,\n    \"productsWeight\": 1\n}"
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/order-and-go/v1/delivery",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "order-and-go",
+                    "v1",
+                    "delivery"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "deliveryTime = 0",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"deliveryTime\": 0,\n    \"productsCount\": 5,\n    \"productsWeight\": 1\n}"
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/order-and-go/v1/delivery",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "order-and-go",
+                    "v1",
+                    "delivery"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "deliveryTime = 24",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"deliveryTime\": 24,\n    \"productsCount\": 5,\n    \"productsWeight\": 1\n}"
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/order-and-go/v1/delivery",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "order-and-go",
+                    "v1",
+                    "delivery"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "deliveryTime = 25",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"deliveryTime\": 25,\n    \"productsCount\": 5,\n    \"productsWeight\": 1\n}"
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/order-and-go/v1/delivery",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "order-and-go",
+                    "v1",
+                    "delivery"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "deliveryTime con minutos (15.01)",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"deliveryTime\": 15.01,\n    \"productsCount\": 5,\n    \"productsWeight\": 1\n}"
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/order-and-go/v1/delivery",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "order-and-go",
+                    "v1",
+                    "delivery"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "productsWeight = 0.1",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"deliveryTime\": 12,\n    \"productsCount\": 5,\n    \"productsWeight\": 0.1\n}"
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/order-and-go/v1/delivery",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "order-and-go",
+                    "v1",
+                    "delivery"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "productsWeight = 2.9",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"deliveryTime\": 12,\n    \"productsCount\": 5,\n    \"productsWeight\": 2.9\n}"
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/order-and-go/v1/delivery",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "order-and-go",
+                    "v1",
+                    "delivery"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "productsWeight = 3.2",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"deliveryTime\": 12,\n    \"productsCount\": 9,\n    \"productsWeight\": 3.2\n}"
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/order-and-go/v1/delivery",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "order-and-go",
+                    "v1",
+                    "delivery"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "productsWeight = 4.5",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"deliveryTime\": 12,\n    \"productsCount\": 9,\n    \"productsWeight\": 4.5\n}"
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/order-and-go/v1/delivery",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "order-and-go",
+                    "v1",
+                    "delivery"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "productsWeight = 5.9",
+          "item": [
+            {
+              "name": "New Request",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"deliveryTime\": 12,\n    \"productsCount\": 9,\n    \"productsWeight\": 5.9\n}"
+                },
+                "url": {
+                  "raw": "{{Urban_Grocers}}/order-and-go/v1/delivery",
+                  "host": [
+                    "{{Urban_Grocers}}"
+                  ],
+                  "path": [
+                    "order-and-go",
+                    "v1",
+                    "delivery"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "Urban_Grocers",
+      "value": ""
+    }
+  ]
+}
