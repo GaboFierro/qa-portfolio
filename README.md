@@ -32,3 +32,11 @@ Junior QA Engineer | ISTQB CTFL Certified | TripleTen QA Bootcamp
 - Tested POST endpoints for kit management and delivery availability
 - Found 4 bugs including incorrect status codes and wrong business logic responses
 - Bug reports: [UG-1](https://gabofierro.atlassian.net/browse/UG-1) · [UG-8](https://gabofierro.atlassian.net/browse/UG-8) · [UG-9](https://gabofierro.atlassian.net/browse/UG-9) · [UG-10](https://gabofierro.atlassian.net/browse/UG-10)
+
+### [Sprint 6 — Mobile App Testing](./sprint6-mobile-testing)
+**App:** Urban.Lunch — Business lunch customization mobile app  
+**Tools:** Android Studio · Jira · Spreadsheet  
+- Designed 50 test cases covering 100% of documented requirements
+- Executed manual tests on Android 9.0 emulator (API Level 28)
+- Found and reported 11 bugs in Jira plus 1 additional exploratory bug
+- Bug reports: [PPES6E-1](https://gabofierro.atlassian.net/browse/PPES6E-1) · [PPES6E-2](https://gabofierro.atlassian.net/browse/PPES6E-2) · [PPES6E-3](https://gabofierro.atlassian.net/browse/PPES6E-3) · [PPES6E-4](https://gabofierro.atlassian.net/browse/PPES6E-4) · [PPES6E-5](https://gabofierro.atlassian.net/browse/PPES6E-5) · [PPES6E-6](https://gabofierro.atlassian.net/browse/PPES6E-6) · [PPES6E-7](https://gabofierro.atlassian.net/browse/PPES6E-7) · [PPES6E-8](https://gabofierro.atlassian.net/browse/PPES6E-8) · [PPES6E-9](https://gabofierro.atlassian.net/browse/PPES6E-9) · [PPES6E-10](https://gabofierro.atlassian.net/browse/PPES6E-10) · [PPES6E-11](https://gabofierro.atlassian.net/browse/PPES6E-11)
